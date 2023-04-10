@@ -77,7 +77,9 @@ Their separate CDFs and PMFs (e.g., P(X ≤ x)) are referred to as marginal CDFs
 
 ### Covariance
 
-The covariance of random variables X and Y is $Cov(X,Y)=E((X−EX)(Y −EY))$
+判断正相关还是负相关
+
+The covariance of random variables X and Y is $Cov(X,Y)=E((X−EX)(Y −EY))$, [-∞,∞]
 
 We can use covariance to compute the variance of sums:
 $$
@@ -85,11 +87,15 @@ Var(X + Y ) = Cov(X, X) + Cov(X, Y ) +Cov(Y,X)+Cov(Y,Y) \\= Var(X) + 2 Cov(X, Y 
 $$
 **Theorem**: If X,Y are independent, then Cov(X, Y ) = 0 
 
-But! **The converse of the above is false.** Let Z ∼ N(0,1), X = Z, Y = Z2, and let us compute the covariance=0. But X and Y are very dependent, since Y is a function of X.
+But! **The converse of the above is false.** Let Z ∼ N(0,1), X = Z, Y = Z2, and let us compute the covariance=0. But X and Y are very dependent since Y is a function of X.
 
 ### Correlation
 
-The correlation of two random variables X and Y is Cor(X,Y)=
+协方差除了XY各自的标准差，刻画XY之间联动性的强弱
+
+The correlation of two random variables X and Y is $Cor(X,Y) r=\frac{Cov(X,Y)}{S_XS_Y}$, [-1,1]
+
+**协方差和相关系数都是描述线性关系**
 
 ## Distributions
 
@@ -491,5 +497,4 @@ $H_1$: **alternative hypothesis**, counterpoint to the null (what you hope to pr
 ### Confidence Level (1-alpha)
 
 ### Confidence Interval
-
 
